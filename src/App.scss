@@ -1,0 +1,175 @@
+$main-color:#4FA74F;
+$secondary-color:#787B7D;
+$border-color:#B6B8B9;
+$nav-color:#24252A;
+$peach-color:#F94C2E;
+$color-0:#A4E3DA;
+$color-1:#FDA88B;
+$color-2:#FB9DD6;
+$color-3:#8786FB;
+$color-4:#FA8C8D;
+$color-5:#8DDCFB;
+$color-6:#BDA2F3;
+$color-7:#8DD6CB;
+$color-8:#A1D799;
+$color-9:#9EBEF1;
+body{
+ margin: {
+    top:7%;
+ }
+}
+@media screen and (max-width: 768px){
+    body {
+      margin-top: 20%;
+    }
+  }
+.bg-main{
+    background-color: $main-color;
+}
+.main-color{
+    color:$main-color;
+}
+.links:hover{
+    color:$main-color;
+}
+.loader-bg{
+    background-color: rgba(0,0,0,0.1);
+}
+.logo-cart{
+    color:$main-color;
+}
+.logo{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+.active{
+    color:$main-color;
+}
+.btn{
+    background-color: $main-color;
+    color:white;
+    padding: {
+        top:8px;
+        bottom:8px;
+        left:12px;
+        right:12px;
+    }
+    
+}
+button[disabled]{
+ color:$secondary-color;
+ border:solid 1px $border-color;
+ background-color: transparent;
+}
+.nav{
+    background-color: $nav-color;
+}
+.slider-button{
+    margin: 5px;
+    padding: 4px 8px;
+    background: #D6D6D6;
+    border-radius: 2px;
+}
+.slider-button:hover{
+    background: #869791; 
+}
+.category-slider{
+    border-radius: 50%;
+}
+.product:hover{
+    box-shadow: 0px 0px 10px 1px rgb(113, 172, 113);
+    transition: 0.5s all;
+}
+
+.cartBtn{
+    opacity: 0;
+    transition: 0.5s all;
+    transform: translateY(50vh);
+}
+.product:hover .cartBtn{
+  opacity: 1;
+  transform: translateY(-30%);
+}
+.peach-color{
+    color:$peach-color;
+}
+.whish-btn{
+    background-color: $peach-color;
+}
+.whish-border{
+    border:solid 2px #F3F3F3;
+}
+.categ-1{
+    background-color: $color-1;
+}
+
+
+.gridContainer {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    height: 90vh;
+    grid-template-areas:
+      "A C D"
+      "B C E";
+  }
+  
+  .A { grid-area: A; }
+  
+  .B { grid-area: B; }
+  
+  .C { grid-area: C; }
+  
+  .D { grid-area: D; }
+  
+  .E { grid-area: E; }
+  
+  .grid-item{
+    position: relative;
+    overflow: hidden;
+  }
+  .layer{
+    width:100%;
+    height:100%;
+    opacity:0;
+    top:0;
+    left:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    transition: 1s all;
+  }
+  
+.grid-item:hover .layer{
+   opacity:1;
+}
+.categ-0{
+    background-color: $color-0;
+}
+.categ-1{
+    background-color: $color-1;
+}
+.categ-2{
+    background-color: $color-2;
+}
+.categ-3{
+    background-color: $color-3;
+}
+.categ-4{
+    background-color: $color-4;
+}
+.categ-5{
+    background-color: $color-5;
+}
+.categ-6{
+    background-color: $color-6;
+}
+.categ-7{
+    background-color: $color-7;
+}
+.categ-8{
+    background-color: $color-8;
+}
+.categ-9{
+    background-color: $color-9;
+}
